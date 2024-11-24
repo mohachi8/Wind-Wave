@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 
 class HeaderTable extends StatelessWidget {
-  const HeaderTable({super.key});
-  static const int raceCount = 2;
-  static const int cutCount = 0;
+  final int raceCount;
+  final int cutCount;
+
+  const HeaderTable({
+    super.key,
+    required this.raceCount,
+    required this.cutCount,
+  });
 
   @override
   Widget build(BuildContext context) {
