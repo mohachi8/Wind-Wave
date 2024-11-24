@@ -15,7 +15,7 @@ class HeaderTable extends StatelessWidget {
     return Row(
       children: [
         _headerCell(text: '順位', width: 64),
-        _headerCell(text: '識別番号', width: 64),
+        _headerCell(text: '番号', width: 64),
         _headerCell(text: '所属', width: 128),
         _headerCell(text: '選手', width: 128),
         for (int i = 1; i <= raceCount; i++) _headerRaceCell(num: '$i'),

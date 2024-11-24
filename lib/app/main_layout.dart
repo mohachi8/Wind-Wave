@@ -15,9 +15,10 @@ class _MainLayoutState extends State<MainLayout> {
 
   // 各ページのリスト
   final List<Widget> _pages = [
-    // const HomePage(),
     const TablePage(),
     const ProfilePage(),
+    const HomePage(),
+    const HomePage(),
   ];
 
   @override
@@ -30,25 +31,30 @@ class _MainLayoutState extends State<MainLayout> {
           highlightColor: Colors.transparent, // タッチ時のハイライトを無効化
         ),
         child: BottomNavigationBar(
-          backgroundColor: Colors.white70, // 背景色を変更
+          // backgroundColor: Colors.white, // 背景色を変更
           currentIndex: _currentIndex,
           onTap: (index) {
             setState(() {
               _currentIndex = index;
             });
           },
+          type: BottomNavigationBarType.fixed,
           items: const [
-            // BottomNavigationBarItem(
-            //   icon: Icon(Icons.home),
-            //   label: 'Home',
-            // ),
             BottomNavigationBarItem(
               icon: Icon(Icons.table_chart),
-              label: 'Table',
+              label: '成績表',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.edit),
+              label: '編集',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              label: 'Profile',
+              label: '選手情報',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.settings),
+              label: '設定',
             ),
           ],
         ),

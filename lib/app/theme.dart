@@ -9,6 +9,10 @@ class AppTheme {
       backgroundColor: Colors.white,
       foregroundColor: Colors.black,
     ),
+    bottomAppBarTheme: const BottomAppBarTheme(
+      color: Colors.white,
+      surfaceTintColor: Colors.black,
+    ),
   );
 
   // ダークテーマ
@@ -18,6 +22,10 @@ class AppTheme {
     appBarTheme: const AppBarTheme(
       backgroundColor: Colors.black,
       foregroundColor: Colors.white,
+    ),
+    bottomAppBarTheme: const BottomAppBarTheme(
+      color: Colors.white,
+      surfaceTintColor: Colors.black,
     ),
   );
 }

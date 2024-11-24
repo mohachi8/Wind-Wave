@@ -6,14 +6,14 @@ import 'package:wind_wave/features/table/presentation/widgets/tournament_table.d
 class TablePage extends StatelessWidget {
   const TablePage({super.key});
 
-  static const int raceCount = 3;
+  static const int raceCount = 7;
   static const int cutCount = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('試合結果'),
+        title: const Text('成績表'),
       ),
       body: const SingleChildScrollView(
         scrollDirection: Axis.horizontal,
@@ -26,10 +26,10 @@ class TablePage extends StatelessWidget {
                 raceCount: raceCount,
                 cutCount: cutCount,
               ),
-              // SingleChildScrollView(
-              //   scrollDirection: Axis.horizontal,
-              //   child: TournamentTable(),
-              // ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: TournamentTable(),
+              ),
               RaceInfoTable(
                 raceCount: raceCount,
                 cutCount: cutCount,
