@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wind_wave/features/table/presentation/pages/table_page.dart';
 import '../features/home/presentation/pages/home_page.dart';
 import '../features/profile/presentation/pages/profile_page.dart';
 
@@ -14,7 +15,8 @@ class _MainLayoutState extends State<MainLayout> {
 
   // 各ページのリスト
   final List<Widget> _pages = [
-    const HomePage(),
+    // const HomePage(),
+    const TablePage(),
     const ProfilePage(),
   ];
 
@@ -36,9 +38,13 @@ class _MainLayoutState extends State<MainLayout> {
             });
           },
           items: const [
+            // BottomNavigationBarItem(
+            //   icon: Icon(Icons.home),
+            //   label: 'Home',
+            // ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home',
+              icon: Icon(Icons.table_chart),
+              label: 'Table',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
