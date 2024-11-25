@@ -6,8 +6,12 @@ class AppTheme {
     brightness: Brightness.light,
     primarySwatch: Colors.blue,
     appBarTheme: const AppBarTheme(
-      backgroundColor: Colors.blue,
-      foregroundColor: Colors.white,
+      backgroundColor: Colors.white,
+      foregroundColor: Colors.black,
+    ),
+    bottomAppBarTheme: const BottomAppBarTheme(
+      color: Colors.white,
+      surfaceTintColor: Colors.black,
     ),
   );
 
@@ -18,6 +22,10 @@ class AppTheme {
     appBarTheme: const AppBarTheme(
       backgroundColor: Colors.black,
       foregroundColor: Colors.white,
+    ),
+    bottomAppBarTheme: const BottomAppBarTheme(
+      color: Colors.white,
+      surfaceTintColor: Colors.black,
     ),
   );
 }
